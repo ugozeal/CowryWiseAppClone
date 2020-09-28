@@ -17,6 +17,7 @@
 		E230A1022521E13700BEC2F3 /* CoweryWise_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E230A1012521E13700BEC2F3 /* CoweryWise_AppUITests.swift */; };
 		E230A1172521E70800BEC2F3 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E230A1162521E70800BEC2F3 /* Extensions.swift */; };
 		E230A11C2521EEB800BEC2F3 /* PageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E230A11B2521EEB800BEC2F3 /* PageCell.swift */; };
+		E230A1212521FCC600BEC2F3 /* Pages.swift in Sources */ = {isa = PBXBuildFile; fileRef = E230A1202521FCC600BEC2F3 /* Pages.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		E230A1032521E13700BEC2F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E230A1162521E70800BEC2F3 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		E230A11B2521EEB800BEC2F3 /* PageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageCell.swift; sourceTree = "<group>"; };
+		E230A1202521FCC600BEC2F3 /* Pages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pages.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 				E230A0E12521E13400BEC2F3 /* SceneDelegate.swift */,
 				E230A0E32521E13400BEC2F3 /* LoginViewController.swift */,
 				E230A11B2521EEB800BEC2F3 /* PageCell.swift */,
+				E230A1202521FCC600BEC2F3 /* Pages.swift */,
 				E230A0E52521E13400BEC2F3 /* Main.storyboard */,
 				E230A0E82521E13700BEC2F3 /* Assets.xcassets */,
 				E230A0EA2521E13700BEC2F3 /* LaunchScreen.storyboard */,
@@ -272,6 +275,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E230A1212521FCC600BEC2F3 /* Pages.swift in Sources */,
 				E230A0E42521E13400BEC2F3 /* LoginViewController.swift in Sources */,
 				E230A11C2521EEB800BEC2F3 /* PageCell.swift in Sources */,
 				E230A0E02521E13400BEC2F3 /* AppDelegate.swift in Sources */,
