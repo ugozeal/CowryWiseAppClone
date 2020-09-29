@@ -89,9 +89,9 @@ class LoginViewController: UIViewController, UICollectionViewDelegate, UICollect
         
         pageControlBottomAnchor = pageController.anchor(nil, left: view.leftAnchor, bottom: buttonView.topAnchor, right: view.rightAnchor, topConstant: 0, leftConstant: 0, bottomConstant: 15, rightConstant: 0, widthConstant: 0, heightConstant: 40)[1]
         
-        _ = signUpButton.anchor(nil, left: buttonView.leftAnchor, bottom: nil, right: buttonView.rightAnchor, topConstant: 16, leftConstant: 32, bottomConstant: 0, rightConstant: 32, widthConstant: 0, heightConstant: 50)
+        _ = signUpButton.anchor(nil, left: buttonView.leftAnchor, bottom: nil, right: buttonView.rightAnchor, topConstant: 16, leftConstant: 16, bottomConstant: 0, rightConstant: 16, widthConstant: 0, heightConstant: 50)
         
-        _ = loginButton.anchor(signUpButton.bottomAnchor, left: buttonView.leftAnchor, bottom: nil, right: buttonView.rightAnchor, topConstant: 12, leftConstant: 32, bottomConstant: 0, rightConstant: 32, widthConstant: 0, heightConstant: 50)
+        _ = loginButton.anchor(signUpButton.bottomAnchor, left: buttonView.leftAnchor, bottom: nil, right: buttonView.rightAnchor, topConstant: 12, leftConstant: 16, bottomConstant: 0, rightConstant: 16, widthConstant: 0, heightConstant: 50)
         //buttonView.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.2)
         registerCell()
     }

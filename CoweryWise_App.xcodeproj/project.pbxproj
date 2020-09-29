@@ -18,6 +18,8 @@
 		E230A1172521E70800BEC2F3 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E230A1162521E70800BEC2F3 /* Extensions.swift */; };
 		E230A11C2521EEB800BEC2F3 /* PageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E230A11B2521EEB800BEC2F3 /* PageCell.swift */; };
 		E230A1212521FCC600BEC2F3 /* Pages.swift in Sources */ = {isa = PBXBuildFile; fileRef = E230A1202521FCC600BEC2F3 /* Pages.swift */; };
+		E230A1292522888A00BEC2F3 /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E230A1282522888A00BEC2F3 /* MainNavigationController.swift */; };
+		E230A13425229C6D00BEC2F3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E230A13325229C6D00BEC2F3 /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		E230A1162521E70800BEC2F3 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		E230A11B2521EEB800BEC2F3 /* PageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageCell.swift; sourceTree = "<group>"; };
 		E230A1202521FCC600BEC2F3 /* Pages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pages.swift; sourceTree = "<group>"; };
+		E230A1282522888A00BEC2F3 /* MainNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
+		E230A13325229C6D00BEC2F3 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +114,8 @@
 				E230A0E12521E13400BEC2F3 /* SceneDelegate.swift */,
 				E230A0E32521E13400BEC2F3 /* LoginViewController.swift */,
 				E230A11B2521EEB800BEC2F3 /* PageCell.swift */,
+				E230A1282522888A00BEC2F3 /* MainNavigationController.swift */,
+				E230A13325229C6D00BEC2F3 /* HomeViewController.swift */,
 				E230A1202521FCC600BEC2F3 /* Pages.swift */,
 				E230A0E52521E13400BEC2F3 /* Main.storyboard */,
 				E230A0E82521E13700BEC2F3 /* Assets.xcassets */,
@@ -276,7 +282,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E230A1212521FCC600BEC2F3 /* Pages.swift in Sources */,
+				E230A1292522888A00BEC2F3 /* MainNavigationController.swift in Sources */,
 				E230A0E42521E13400BEC2F3 /* LoginViewController.swift in Sources */,
+				E230A13425229C6D00BEC2F3 /* HomeViewController.swift in Sources */,
 				E230A11C2521EEB800BEC2F3 /* PageCell.swift in Sources */,
 				E230A0E02521E13400BEC2F3 /* AppDelegate.swift in Sources */,
 				E230A0E22521E13400BEC2F3 /* SceneDelegate.swift in Sources */,
