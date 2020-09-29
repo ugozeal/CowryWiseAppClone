@@ -38,11 +38,7 @@ class PageCell: UICollectionViewCell {
         iv.clipsToBounds = true
         return iv
     }()
-    let spaceView : UIView = {
-        let view = UIView()
-        view.backgroundColor = .white
-        return view
-    }()
+   
     
     let textView: UITextView = {
        let tv = UITextView()
