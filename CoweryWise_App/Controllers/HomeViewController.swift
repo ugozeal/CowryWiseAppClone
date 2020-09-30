@@ -7,8 +7,8 @@
 
 import UIKit
 
-class LoginViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
-    let cellId = "cellId"
+class HomeViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+    
     var pageControlBottomAnchor: NSLayoutConstraint?
     
     lazy var collecttionView: UICollectionView = {
@@ -44,35 +44,50 @@ class LoginViewController: UIViewController, UICollectionViewDelegate, UICollect
         button.setTitle("SIGN UP", for: .normal)
         button.setTitleColor(.white, for: .normal)
         button.layer.cornerRadius = 5
-        //button.addTarget(self, action: #selector(handleLogin), for: .touchUpInside)
+        button.addTarget(self, action: #selector(handleSignUp), for: .touchUpInside)
         return button
     }()
     
     lazy var loginButton: UIButton = {
-        let button = UIButton(type: .system)
-        button.backgroundColor = .white
-        button.setTitle("LOG IN", for: .normal)
-        button.setTitleColor(UIColor(red: 1/255, green: 101/255, blue: 245/255, alpha: 1), for: .normal)
-        button.layer.cornerRadius = 5
-        button.layer.borderColor = CGColor(red: 1/255, green: 101/255, blue: 245/255, alpha: 1)
-        button.layer.borderWidth = 1
-        //button.addTarget(self, action: #selector(handleLogin), for: .touchUpInside)
-        return button
+        let loginbutton = UIButton(type: .system)
+        loginbutton.backgroundColor = .white
+        loginbutton.setTitle("LOG IN", for: .normal)
+        loginbutton.setTitleColor(UIColor(red: 1/255, green: 101/255, blue: 245/255, alpha: 1), for: .normal)
+        loginbutton.layer.cornerRadius = 5
+        loginbutton.layer.borderColor = CGColor(red: 1/255, green: 101/255, blue: 245/255, alpha: 1)
+        loginbutton.layer.borderWidth = 1
+        loginbutton.addTarget(self, action: #selector(handleLogin), for: .touchUpInside)
+        return loginbutton
     }()
     
+    @objc private  func handleLogin() {
+        let seguePath = LoginController()
+        let navController = UINavigationController(rootViewController: seguePath)
+        navController.modalPresentationStyle = .fullScreen
+        present(navController, animated: true)
+    }
+    
+    @objc private  func handleSignUp() {
+        let seguePath = SignupViewController()
+        let navController = UINavigationController(rootViewController: seguePath)
+        navController.modalPresentationStyle = .fullScreen
+        present(navController, animated: true)
+    }
+    
+    
+    
     let pages : [Pages] = {
-        let firstPage = Pages(title: "Welcome to Cowrywise.", message: "We help you save and invest your money to achieve your financial goals.", imageName: "cowrywise1")
-        let secondPage = Pages(title: "Plan your finances", message: "Use our simple money tools to plan for tomorrow.", imageName: "page2")
-        let thirdPage = Pages(title: "Save for the future", message: "Save towards your goals and learn financial discipline along the way.", imageName: "page3")
-        let fourthPage = Pages(title: "Invest with ease", message: "Invest in top mutual funds with as little as NGN 100 grow your wealth.", imageName: "page4")
+        let firstPage = Pages(title: StringsConstants.pageOneTitle, message: StringsConstants.pageOneMessage, imageName: StringsConstants.pageOneImage)
+        let secondPage = Pages(title: StringsConstants.pageTwoTitle , message: StringsConstants.pageTwoMessage, imageName: StringsConstants.pageTwoImage)
+        let thirdPage = Pages(title: StringsConstants.pageThreeTitle, message: StringsConstants.pageThreeMessage, imageName: StringsConstants.pageThreeImage)
+        let fourthPage = Pages(title: StringsConstants.pageFourTitle, message: StringsConstants.pageFourMessage, imageName: StringsConstants.pageFourImage)
 
         
         return [firstPage, secondPage, thirdPage, fourthPage]
     }()
     
     fileprivate func registerCell(){
-        collecttionView.register(PageCell.self, forCellWithReuseIdentifier: cellId)
-        //collecttionView.register(LoginCell.self, forCellWithReuseIdentifier: loginCellId)
+        collecttionView.register(PageCell.self, forCellWithReuseIdentifier: StringsConstants.cellId)
     }
 
     override func viewDidLoad() {
@@ -82,8 +97,9 @@ class LoginViewController: UIViewController, UICollectionViewDelegate, UICollect
         view.addSubview(pageController)
         buttonView.addSubview(loginButton)
         buttonView.addSubview(signUpButton)
+        view.backgroundColor = .white
         _ = collecttionView.anchor(view.topAnchor, left: view.leftAnchor, bottom: view.bottomAnchor, right: view.rightAnchor, topConstant: 40, leftConstant: 0, bottomConstant: 500, rightConstant: 0, widthConstant: 0, heightConstant: 0)
-//        collecttionView.anchorToTop(view.topAnchor, left: view.leftAnchor, bottom: view.bottomAnchor, right: view.rightAnchor)
+        
         collecttionView.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.75).isActive = true
         buttonView.anchorToTop(collecttionView.bottomAnchor, left: view.leftAnchor, bottom: view.bottomAnchor, right: view.rightAnchor)
         
@@ -92,7 +108,6 @@ class LoginViewController: UIViewController, UICollectionViewDelegate, UICollect
         _ = signUpButton.anchor(nil, left: buttonView.leftAnchor, bottom: nil, right: buttonView.rightAnchor, topConstant: 16, leftConstant: 16, bottomConstant: 0, rightConstant: 16, widthConstant: 0, heightConstant: 50)
         
         _ = loginButton.anchor(signUpButton.bottomAnchor, left: buttonView.leftAnchor, bottom: nil, right: buttonView.rightAnchor, topConstant: 12, leftConstant: 16, bottomConstant: 0, rightConstant: 16, widthConstant: 0, heightConstant: 50)
-        //buttonView.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.2)
         registerCell()
     }
     
@@ -101,7 +116,7 @@ class LoginViewController: UIViewController, UICollectionViewDelegate, UICollect
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as! PageCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: StringsConstants.cellId, for: indexPath) as! PageCell
         let page = pages[indexPath.item]
         cell.page = page
         return cell

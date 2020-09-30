@@ -53,17 +53,20 @@ extension UIView {
         return anchors
     }
     
-    func addConstraintWithFormat(format: String, views: UIView...){
-        var viewsDictionary = [String: UIView]()
-        for (index, view) in views.enumerated(){
-            let key = "v\(index)"
-            view.translatesAutoresizingMaskIntoConstraints = false
-            viewsDictionary[key] = view
-        }
-        
-        addConstraints(NSLayoutConstraint.constraints(withVisualFormat: format, options: NSLayoutConstraint.FormatOptions(), metrics: nil, views: viewsDictionary))
-        
-    }
-    
 }
 
+
+extension UILabel {
+    func underlineMyText(range1:String, range2:String) {
+        if let textString = self.text {
+
+            let str = NSString(string: textString)
+            let firstRange = str.range(of: range1)
+            let secRange = str.range(of: range2)
+            let attributedString = NSMutableAttributedString(string: textString)
+            attributedString.addAttribute(NSAttributedString.Key.underlineStyle, value: NSUnderlineStyle.single.rawValue, range: firstRange)
+            attributedString.addAttribute(NSAttributedString.Key.underlineStyle, value: NSUnderlineStyle.single.rawValue, range: secRange)
+            attributedText = attributedString
+        }
+    }
+}

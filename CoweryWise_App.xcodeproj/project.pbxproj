@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		E230A0E02521E13400BEC2F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E230A0DF2521E13400BEC2F3 /* AppDelegate.swift */; };
 		E230A0E22521E13400BEC2F3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E230A0E12521E13400BEC2F3 /* SceneDelegate.swift */; };
-		E230A0E42521E13400BEC2F3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E230A0E32521E13400BEC2F3 /* LoginViewController.swift */; };
+		E230A0E42521E13400BEC2F3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E230A0E32521E13400BEC2F3 /* HomeViewController.swift */; };
 		E230A0E72521E13400BEC2F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E230A0E52521E13400BEC2F3 /* Main.storyboard */; };
 		E230A0E92521E13700BEC2F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E230A0E82521E13700BEC2F3 /* Assets.xcassets */; };
 		E230A0EC2521E13700BEC2F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E230A0EA2521E13700BEC2F3 /* LaunchScreen.storyboard */; };
@@ -19,7 +19,13 @@
 		E230A11C2521EEB800BEC2F3 /* PageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E230A11B2521EEB800BEC2F3 /* PageCell.swift */; };
 		E230A1212521FCC600BEC2F3 /* Pages.swift in Sources */ = {isa = PBXBuildFile; fileRef = E230A1202521FCC600BEC2F3 /* Pages.swift */; };
 		E230A1292522888A00BEC2F3 /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E230A1282522888A00BEC2F3 /* MainNavigationController.swift */; };
-		E230A13425229C6D00BEC2F3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E230A13325229C6D00BEC2F3 /* HomeViewController.swift */; };
+		E230A13425229C6D00BEC2F3 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E230A13325229C6D00BEC2F3 /* LoginController.swift */; };
+		E29C93D025245CD300064282 /* CheckEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29C93CF25245CD300064282 /* CheckEmailViewController.swift */; };
+		E29C93D52524641000064282 /* WelcomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29C93D42524641000064282 /* WelcomePageViewController.swift */; };
+		E29C93EB2524887500064282 /* StringsConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29C93EA2524887500064282 /* StringsConstants.swift */; };
+		E2A5930C252385D200B646B5 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A5930B252385D200B646B5 /* SignupViewController.swift */; };
+		E2A593112523B2F500B646B5 /* SetUserNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A593102523B2F500B646B5 /* SetUserNameViewController.swift */; };
+		E2A593162523F10500B646B5 /* ConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A593152523F10500B646B5 /* ConfirmationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,7 +49,7 @@
 		E230A0DC2521E13400BEC2F3 /* CoweryWise_App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoweryWise_App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E230A0DF2521E13400BEC2F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E230A0E12521E13400BEC2F3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E230A0E32521E13400BEC2F3 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		E230A0E32521E13400BEC2F3 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		E230A0E62521E13400BEC2F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E230A0E82521E13700BEC2F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E230A0EB2521E13700BEC2F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -58,7 +64,13 @@
 		E230A11B2521EEB800BEC2F3 /* PageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageCell.swift; sourceTree = "<group>"; };
 		E230A1202521FCC600BEC2F3 /* Pages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pages.swift; sourceTree = "<group>"; };
 		E230A1282522888A00BEC2F3 /* MainNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
-		E230A13325229C6D00BEC2F3 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		E230A13325229C6D00BEC2F3 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		E29C93CF25245CD300064282 /* CheckEmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckEmailViewController.swift; sourceTree = "<group>"; };
+		E29C93D42524641000064282 /* WelcomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomePageViewController.swift; sourceTree = "<group>"; };
+		E29C93EA2524887500064282 /* StringsConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringsConstants.swift; sourceTree = "<group>"; };
+		E2A5930B252385D200B646B5 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		E2A593102523B2F500B646B5 /* SetUserNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetUserNameViewController.swift; sourceTree = "<group>"; };
+		E2A593152523F10500B646B5 /* ConfirmationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,13 +122,12 @@
 			isa = PBXGroup;
 			children = (
 				E230A1152521E6E500BEC2F3 /* Helpers */,
+				E29C93D92524844400064282 /* Controllers */,
+				E29C93F52524B73200064282 /* Constants */,
+				E29C93DA2524847000064282 /* Model */,
+				E29C93DB2524848600064282 /* Pages */,
 				E230A0DF2521E13400BEC2F3 /* AppDelegate.swift */,
 				E230A0E12521E13400BEC2F3 /* SceneDelegate.swift */,
-				E230A0E32521E13400BEC2F3 /* LoginViewController.swift */,
-				E230A11B2521EEB800BEC2F3 /* PageCell.swift */,
-				E230A1282522888A00BEC2F3 /* MainNavigationController.swift */,
-				E230A13325229C6D00BEC2F3 /* HomeViewController.swift */,
-				E230A1202521FCC600BEC2F3 /* Pages.swift */,
 				E230A0E52521E13400BEC2F3 /* Main.storyboard */,
 				E230A0E82521E13700BEC2F3 /* Assets.xcassets */,
 				E230A0EA2521E13700BEC2F3 /* LaunchScreen.storyboard */,
@@ -149,6 +160,45 @@
 				E230A1162521E70800BEC2F3 /* Extensions.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		E29C93D92524844400064282 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E230A1282522888A00BEC2F3 /* MainNavigationController.swift */,
+				E230A13325229C6D00BEC2F3 /* LoginController.swift */,
+				E230A0E32521E13400BEC2F3 /* HomeViewController.swift */,
+				E2A5930B252385D200B646B5 /* SignupViewController.swift */,
+				E2A593102523B2F500B646B5 /* SetUserNameViewController.swift */,
+				E2A593152523F10500B646B5 /* ConfirmationViewController.swift */,
+				E29C93CF25245CD300064282 /* CheckEmailViewController.swift */,
+				E29C93D42524641000064282 /* WelcomePageViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		E29C93DA2524847000064282 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E230A1202521FCC600BEC2F3 /* Pages.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E29C93DB2524848600064282 /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				E230A11B2521EEB800BEC2F3 /* PageCell.swift */,
+			);
+			path = Pages;
+			sourceTree = "<group>";
+		};
+		E29C93F52524B73200064282 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				E29C93EA2524887500064282 /* StringsConstants.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -281,14 +331,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2A5930C252385D200B646B5 /* SignupViewController.swift in Sources */,
 				E230A1212521FCC600BEC2F3 /* Pages.swift in Sources */,
+				E29C93D52524641000064282 /* WelcomePageViewController.swift in Sources */,
 				E230A1292522888A00BEC2F3 /* MainNavigationController.swift in Sources */,
-				E230A0E42521E13400BEC2F3 /* LoginViewController.swift in Sources */,
-				E230A13425229C6D00BEC2F3 /* HomeViewController.swift in Sources */,
+				E230A0E42521E13400BEC2F3 /* HomeViewController.swift in Sources */,
+				E2A593162523F10500B646B5 /* ConfirmationViewController.swift in Sources */,
+				E230A13425229C6D00BEC2F3 /* LoginController.swift in Sources */,
+				E29C93D025245CD300064282 /* CheckEmailViewController.swift in Sources */,
 				E230A11C2521EEB800BEC2F3 /* PageCell.swift in Sources */,
 				E230A0E02521E13400BEC2F3 /* AppDelegate.swift in Sources */,
+				E29C93EB2524887500064282 /* StringsConstants.swift in Sources */,
 				E230A0E22521E13400BEC2F3 /* SceneDelegate.swift in Sources */,
 				E230A1172521E70800BEC2F3 /* Extensions.swift in Sources */,
+				E2A593112523B2F500B646B5 /* SetUserNameViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

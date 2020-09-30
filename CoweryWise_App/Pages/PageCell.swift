@@ -31,21 +31,21 @@ class PageCell: UICollectionViewCell {
     }
     
     let imageView: UIImageView = {
-        let iv = UIImageView()
-        iv.contentMode = .scaleAspectFit
-        iv.backgroundColor = .white
-        iv.image = UIImage(named: "cowrywise1")
-        iv.clipsToBounds = true
-        return iv
+        let image = UIImageView()
+        image.contentMode = .scaleAspectFit
+        image.backgroundColor = .white
+        image.image = UIImage(named: "")
+        image.clipsToBounds = true
+        return image
     }()
    
     
     let textView: UITextView = {
-       let tv = UITextView()
-        tv.isEditable = false
-        tv.text = "Welcome to Cowrywise"
-        tv.contentInset = UIEdgeInsets(top: 20, left: 0, bottom: 0, right: 0)
-        return tv
+       let titleText = UITextView()
+        titleText.isEditable = false
+        titleText.text = ""
+        titleText.contentInset = UIEdgeInsets(top: 20, left: 0, bottom: 0, right: 0)
+        return titleText
     }()
     
     func setupViews(){

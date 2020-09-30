@@ -12,7 +12,7 @@ class MainNavigationController: UINavigationController {
         super.viewDidLoad()
         
         if isLoggedIn(){
-            let homeController = HomeController()
+            let homeController = LoginController()
             viewControllers = [homeController]
             // assume user is logged in
         }else{
@@ -22,11 +22,11 @@ class MainNavigationController: UINavigationController {
     }
     fileprivate func isLoggedIn() -> Bool{
         //return UserDefaults.standard.isLoggedIn()
-        return true
+        return false
     }
     
     @objc func showLogInController(){
-        let logInController = LoginViewController()
+        let logInController = HomeViewController()
         logInController.modalPresentationStyle = .fullScreen
         present(logInController, animated: true, completion: {
             // Put something here
